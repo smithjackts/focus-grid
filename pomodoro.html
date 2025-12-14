@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pomodoro časovač pro soustředěnou práci.">
+    <meta name="author" content="Tvůj Jméno">
+    <title>Pomodoro | FocusGrid</title>
+    
+    <link rel="icon" type="image/png" href="img/image.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pixel-theme">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="pomodoro.html" class="active">Pomodoro</a></li>
+            <li><a href="habits.html">Quests</a></li>
+            <li><a href="journal.html">Log</a></li>
+            <li><a href="navod.html">Návod</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-container">
+        <div class="glass-panel">
+            
+            <h1 class="page-title">FOCUS TIMER</h1>
+
+            <button id="music-toggle" class="music-btn" title="Zapnout hudbu">🎵</button>
+            <audio id="bg-music" loop hidden>
+                <source src="audio/focus.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="mode-toggles">
+                <button class="pixel-btn active">POMODORO</button>
+                <button class="pixel-btn">SHORT BREAK</button>
+                <button class="pixel-btn">LONG BREAK</button>
+            </div>
+
+            <div id="timer-display" class="pixel-timer">25:00</div>
+
+            <div class="game-controls">
+                <button id="btn-start" class="pixel-btn start-btn">START</button>
+                <button id="btn-reset" class="pixel-btn reset-btn">RESET</button>
+            </div>
+
+            <div class="instructions-panel">
+                <h3>JAK HRÁT?</h3>
+                <ol>
+                    <li>Vyber úkol.</li>
+                    <li>Spusť časovač.</li>
+                    <li>Pracuj do zazvonění.</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

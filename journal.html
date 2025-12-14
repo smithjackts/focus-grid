@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobní deník pro záznam postupu.">
+    <meta name="author" content="Tvůj Jméno">
+    <title>Log | FocusGrid</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/image.png">
+</head>
+<body class="pixel-theme">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="pomodoro.html">Pomodoro</a></li>
+            <li><a href="habits.html">Quests</a></li>
+            <li><a href="journal.html" class="active">Log</a></li>
+            <li><a href="navod.html">Návod</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-container">
+        <div class="glass-panel">
+            <h1 class="page-title">CAPTAIN'S LOG</h1>
+            <p>Zapiš si svůj postup.</p>
+            
+            <p id="save-status" style="font-weight: bold; color: #d35400; margin-bottom: 10px;">
+                Status: WAITING FOR INPUT...
+            </p>
+            
+            <textarea id="journal-entry" placeholder="Piš sem..."></textarea>
+            
+            <div class="game-controls">
+                <button id="btn-save" class="pixel-btn">ULOŽIT</button>
+                <button id="btn-download" class="pixel-btn" style="background-color: #3498db;">STÁHNOUT .TXT</button>
+                <button id="btn-delete" class="pixel-btn">SMAZAT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
